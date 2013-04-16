@@ -30,15 +30,21 @@ chef-client.  Note, this assumes:
 
 3.  Upload software_install cookbook to Chef server.
 
+```
     $ knife cookbook upload software_install
+```
 
 4.  Add `software_install::default` to run_list.
 
+```
     $ knife node run_list add <nodename> 'recipe[software_install]'
+```
 
 5.  Invoke chef-client on system to be automated.
 
+```
     $ chef-client
+```
 
 ## Attributes
 
