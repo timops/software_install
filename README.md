@@ -1,8 +1,11 @@
-# software_install cookbook
+# software_install Cookbook
 
-# Requirements
+This cookbook automates the deployment of software packages which are
+specified in a data bag.  For demonstration purposes only.
 
-* You should already have a RHEL/CentOS 6.x target.  The provided
+## Requirements
+
+You should already have a RHEL/CentOS 6.x target.  The provided
 Vagrantfile will retrieve a basebox for you that includes 10.14
 chef-client.  Note, this assumes:
 
@@ -11,13 +14,13 @@ chef-client.  Note, this assumes:
   3.  You have berkshelf installed.
   4.  You have VirtualBox installed.
 
-* Create the 'software' data bag:
+Create the 'software' data bag:
 
   1.  knife data bag create software
   2.  knife data bag from file software software/git.json
   3.  knife data bag from file software software/apache.json
 
-# Usage
+## Usage
 
   1.  Modify data bag to your liking:
     * Create new data bag items.
@@ -28,7 +31,7 @@ chef-client.  Note, this assumes:
   5.  Invoke chef-client on system to be automated.
 
 
-# Attributes
+## Attributes
 
 * This cookbook is driven by a 'software' data bag, and thus no
 attributes are required.
