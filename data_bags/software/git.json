@@ -1,0 +1,6 @@
+{
+  "id": "git",
+  "description": "Git Client",
+  "version": "1.7.1",
+  "pkgs": [ "git" ]
+}

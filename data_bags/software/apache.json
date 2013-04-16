@@ -1,0 +1,6 @@
+{
+  "id": "apache",
+  "description": "Apache Server",
+  "version": "2.2.15",
+  "pkgs": [ "httpd", "httpd-devel" ]
+}
