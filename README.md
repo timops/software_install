@@ -22,9 +22,11 @@ chef-client.  Note, this assumes:
   * Modify the existing ones.
 2.  Create data bag and upload items (see below).
 
+```
     $ knife data bag create software
     $ knife data bag from file software software/git.json
     $ knife data bag from file software software/apache.json
+```
 
 3.  Upload software_install cookbook to Chef server.
 
