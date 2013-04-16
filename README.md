@@ -17,24 +17,24 @@ chef-client.  Note, this assumes:
 
 ## Usage
 
-  1.  Modify data bag to your liking:
-    * Create new data bag items.
-    * Modify the existing ones.
-  2.  Create data bag and upload items (see below).
+1.  Modify data bag to your liking:
+  * Create new data bag items.
+  * Modify the existing ones.
+2.  Create data bag and upload items (see below).
 
     $ knife data bag create software
     $ knife data bag from file software software/git.json
     $ knife data bag from file software software/apache.json
 
-  3.  Upload software_install cookbook to Chef server.
+3.  Upload software_install cookbook to Chef server.
 
     $ knife cookbook upload software_install
 
-  4.  Add `software_install::default` to run_list.
+4.  Add `software_install::default` to run_list.
 
     $ knife node run_list add <nodename> 'recipe[software_install]'
 
-  5.  Invoke chef-client on system to be automated.
+5.  Invoke chef-client on system to be automated.
 
     $ chef-client
 
