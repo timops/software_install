@@ -5,8 +5,14 @@ specified in a data bag.  For demonstration purposes only.
 
 ## Requirements
 
-You should already have a RHEL/CentOS 6.x target.  The provided
-Vagrantfile will retrieve a basebox for you that includes 10.14
+#### Option 1:
+
+You should already have a RHEL/CentOS 6.x target chef-client
+preinstalled. 
+
+#### Option 2:
+
+The provided Vagrantfile will retrieve a basebox for you that includes 10.14
 chef-client.  Note, this assumes:
 
   1.  You have internet access.
